@@ -11,7 +11,7 @@ import net.konohana.sakuya.inquiry.enjurw.dao.dao
 fun Route.fromStaInfoRouter() {
     route("enjurw01") {
         get {
-            call.respond(FreeMarkerContent("index.ftl", mapOf("fromStaInfo" to dao.allEnjuRW01FromStaInfo())))
+            call.respond(FreeMarkerContent("index_enjurw01.ftl", mapOf("fromStaInfo" to dao.allEnjuRW01FromStaInfo())))
         }
     }
     route("enjurw02") {
