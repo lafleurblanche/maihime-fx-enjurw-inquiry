@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Language" content="ja" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" href="/styles.css">
-        <title>Kotlin Journal</title>
+        <title>乗車駅照会</title>
     </head>
     <body style="font-family: sans-serif">
     <h3>えんじゅ交通苆谷線</h3>
