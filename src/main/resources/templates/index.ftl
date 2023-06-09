@@ -1,5 +1,5 @@
 <#-- @ftlvariable name="articles" type="kotlin.collections.List<com.example.models.Article>" -->
-<#import "_layout.ftl" as layout />
+<#import "_header_enjurw01.ftl" as layout />
 <@layout.header>
     <table border=0>
       <tr><td>乗車駅コード<td>乗車駅名
