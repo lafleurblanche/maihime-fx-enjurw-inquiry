@@ -1,8 +1,10 @@
 package net.konohana.sakuya.inquiry.enjurw
 
-import io.ktor.server.application.*
+import io.ktor.server.application.Application
 import net.konohana.sakuya.inquiry.enjurw.dao.DatabaseFactory
-import net.konohana.sakuya.inquiry.enjurw.plugins.*
+import net.konohana.sakuya.inquiry.enjurw.plugins.configureRouting
+import net.konohana.sakuya.inquiry.enjurw.plugins.configureSerialization
+import net.konohana.sakuya.inquiry.enjurw.plugins.configureTemplating
 
 fun main(args: Array<String>): Unit =
     io.ktor.server.jetty.EngineMain.main(args)
