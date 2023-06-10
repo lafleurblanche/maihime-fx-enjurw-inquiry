@@ -8,6 +8,7 @@ val jdkVersion: String by project
 plugins {
     kotlin("jvm") version "1.8.22"
     id("io.ktor.plugin") version "2.3.1"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.8.22"
 }
 
@@ -49,4 +50,21 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktorVersion")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion")
+}
+
+tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> { mergeServiceFiles() }
+
+// 'gradle jar'を使えるようにタスクを定義
+val jar by tasks.getting(Jar::class) {
+    duplicatesStrategy= DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes["Main-Class"] = "net.konohana.sakuya.inquiry.enjurw.ApplicationKt"
+    }
+
+    from(
+        configurations.runtimeClasspath.get().map {
+            if (it.isDirectory) it else zipTree(it)
+        }
+    )
+    exclude("META-INF/*.RSA", "META-INF/*.SF", "META-INF/*.DSA")
 }
