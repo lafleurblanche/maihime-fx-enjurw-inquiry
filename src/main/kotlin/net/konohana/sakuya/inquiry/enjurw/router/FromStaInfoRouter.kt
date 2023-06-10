@@ -49,4 +49,44 @@ fun Route.fromStaInfoRouter() {
             call.respond(FreeMarkerContent("index_enjurw08.ftl", mapOf("fromStaInfo" to dao.allEnjuRW08FromStaInfo())))
         }
     }
+    route("enjurw09") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw09.ftl", mapOf("fromStaInfo" to dao.allEnjuRW09FromStaInfo())))
+        }
+    }
+    route("enjurw10") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw10.ftl", mapOf("fromStaInfo" to dao.allEnjuRW10FromStaInfo())))
+        }
+    }
+    route("enjurw11") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw11.ftl", mapOf("fromStaInfo" to dao.allEnjuRW11FromStaInfo())))
+        }
+    }
+    route("enjurw12") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw12.ftl", mapOf("fromStaInfo" to dao.allEnjuRW12FromStaInfo())))
+        }
+    }
+    route("enjurw13") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw13.ftl", mapOf("fromStaInfo" to dao.allEnjuRW13FromStaInfo())))
+        }
+    }
+    route("enjurw14") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw14.ftl", mapOf("fromStaInfo" to dao.allEnjuRW14FromStaInfo())))
+        }
+    }
+    route("enjurw15") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw15.ftl", mapOf("fromStaInfo" to dao.allEnjuRW15FromStaInfo())))
+        }
+    }
+    route("enjurw16") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw16.ftl", mapOf("fromStaInfo" to dao.allEnjuRW16FromStaInfo())))
+        }
+    }
 }
