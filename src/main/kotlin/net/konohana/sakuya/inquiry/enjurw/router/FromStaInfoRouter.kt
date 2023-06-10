@@ -29,4 +29,24 @@ fun Route.fromStaInfoRouter() {
             call.respond(FreeMarkerContent("index_enjurw04.ftl", mapOf("fromStaInfo" to dao.allEnjuRW04FromStaInfo())))
         }
     }
+    route("enjurw05") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw05.ftl", mapOf("fromStaInfo" to dao.allEnjuRW05FromStaInfo())))
+        }
+    }
+    route("enjurw06") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw06.ftl", mapOf("fromStaInfo" to dao.allEnjuRW06FromStaInfo())))
+        }
+    }
+    route("enjurw07") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw07.ftl", mapOf("fromStaInfo" to dao.allEnjuRW07FromStaInfo())))
+        }
+    }
+    route("enjurw08") {
+        get {
+            call.respond(FreeMarkerContent("index_enjurw08.ftl", mapOf("fromStaInfo" to dao.allEnjuRW08FromStaInfo())))
+        }
+    }
 }
