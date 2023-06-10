@@ -3,11 +3,18 @@ val kotlinVersion: String by project
 val logbackVersion: String by project
 val postgresVersion : String by project
 val exposedVersion : String by project
+val jdkVersion: String by project
 
 plugins {
     kotlin("jvm") version "1.8.22"
     id("io.ktor.plugin") version "2.3.1"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.8.22"
+}
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(jdkVersion))
+    }
 }
 
 group = "net.konohana.sakuya.inquiry.enjurw"
