@@ -16,6 +16,9 @@ import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW13FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW14FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW15FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW16FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW17FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW18FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW19FromStaInfoData
 
 interface DaoFacade {
     suspend fun allEnjuRW01FromStaInfo(): List<EnjuRW01FromStaInfoData>
@@ -34,4 +37,7 @@ interface DaoFacade {
     suspend fun allEnjuRW14FromStaInfo(): List<EnjuRW14FromStaInfoData>
     suspend fun allEnjuRW15FromStaInfo(): List<EnjuRW15FromStaInfoData>
     suspend fun allEnjuRW16FromStaInfo(): List<EnjuRW16FromStaInfoData>
+    suspend fun allEnjuRW17FromStaInfo(): List<EnjuRW17FromStaInfoData>
+    suspend fun allEnjuRW18FromStaInfo(): List<EnjuRW18FromStaInfoData>
+    suspend fun allEnjuRW19FromStaInfo(): List<EnjuRW19FromStaInfoData>
 }
