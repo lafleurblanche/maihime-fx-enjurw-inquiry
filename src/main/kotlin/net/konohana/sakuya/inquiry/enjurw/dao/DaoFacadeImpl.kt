@@ -17,6 +17,9 @@ import net.konohana.sakuya.inquiry.enjurw.models.EnjuRW13FromStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.EnjuRW14FromStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.EnjuRW15FromStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.EnjuRW16FromStaInfo
+import net.konohana.sakuya.inquiry.enjurw.models.EnjuRW17FromStaInfo
+import net.konohana.sakuya.inquiry.enjurw.models.EnjuRW18FromStaInfo
+import net.konohana.sakuya.inquiry.enjurw.models.EnjuRW19FromStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW01FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW02FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW03FromStaInfoData
@@ -33,6 +36,9 @@ import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW13FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW14FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW15FromStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW16FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW17FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW18FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW19FromStaInfoData
 import org.jetbrains.exposed.sql.ResultRow
 import org.jetbrains.exposed.sql.selectAll
 
@@ -133,6 +139,24 @@ class DaoFacadeImpl : DaoFacade {
         fromStaName = row[EnjuRW16FromStaInfo.fromStaName],
     )
 
+    private fun resultRowToEnjuRW17(row: ResultRow) = EnjuRW17FromStaInfoData(
+        id = row[EnjuRW17FromStaInfo.id],
+        fromStaCode = row[EnjuRW17FromStaInfo.fromStaCode],
+        fromStaName = row[EnjuRW17FromStaInfo.fromStaName],
+    )
+
+    private fun resultRowToEnjuRW18(row: ResultRow) = EnjuRW18FromStaInfoData(
+        id = row[EnjuRW18FromStaInfo.id],
+        fromStaCode = row[EnjuRW18FromStaInfo.fromStaCode],
+        fromStaName = row[EnjuRW18FromStaInfo.fromStaName],
+    )
+
+    private fun resultRowToEnjuRW19(row: ResultRow) = EnjuRW19FromStaInfoData(
+        id = row[EnjuRW19FromStaInfo.id],
+        fromStaCode = row[EnjuRW19FromStaInfo.fromStaCode],
+        fromStaName = row[EnjuRW19FromStaInfo.fromStaName],
+    )
+
     override suspend fun allEnjuRW01FromStaInfo(): List<EnjuRW01FromStaInfoData> = dbQuery {
         EnjuRW01FromStaInfo.selectAll().map(::resultRowToEnjuRW01)
     }
@@ -195,6 +219,18 @@ class DaoFacadeImpl : DaoFacade {
 
     override suspend fun allEnjuRW16FromStaInfo(): List<EnjuRW16FromStaInfoData> = dbQuery {
         EnjuRW16FromStaInfo.selectAll().map(::resultRowToEnjuRW16)
+    }
+
+    override suspend fun allEnjuRW17FromStaInfo(): List<EnjuRW17FromStaInfoData> = dbQuery {
+        EnjuRW17FromStaInfo.selectAll().map(::resultRowToEnjuRW17)
+    }
+
+    override suspend fun allEnjuRW18FromStaInfo(): List<EnjuRW18FromStaInfoData> = dbQuery {
+        EnjuRW18FromStaInfo.selectAll().map(::resultRowToEnjuRW18)
+    }
+
+    override suspend fun allEnjuRW19FromStaInfo(): List<EnjuRW19FromStaInfoData> = dbQuery {
+        EnjuRW19FromStaInfo.selectAll().map(::resultRowToEnjuRW19)
     }
 }
 
