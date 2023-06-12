@@ -12,6 +12,7 @@ import io.ktor.server.routing.get
 import io.ktor.server.routing.routing
 import net.konohana.sakuya.inquiry.enjurw.router.fromStaInfoRouter
 import net.konohana.sakuya.inquiry.enjurw.router.stylesRouter
+import net.konohana.sakuya.inquiry.enjurw.router.toStaInfoRouter
 
 fun Application.configureRouting() {
     
@@ -27,6 +28,7 @@ fun Application.configureRouting() {
         // Static plugin. Try to access `/static/index.html`
         staticResources("/static", "static")
         fromStaInfoRouter()
+        toStaInfoRouter()
         stylesRouter()
     }
 }
