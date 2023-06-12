@@ -4,10 +4,14 @@ import net.konohana.sakuya.inquiry.enjurw.models.tosta.EnjuRW01ToStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.tosta.EnjuRW02ToStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.tosta.EnjuRW03ToStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.tosta.EnjuRW04ToStaInfo
+import net.konohana.sakuya.inquiry.enjurw.models.tosta.EnjuRW05ToStaInfo
+import net.konohana.sakuya.inquiry.enjurw.models.tosta.EnjuRW06ToStaInfo
 import net.konohana.sakuya.inquiry.enjurw.models.tosta.dto.EnjuRW01ToStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.tosta.dto.EnjuRW02ToStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.tosta.dto.EnjuRW03ToStaInfoData
 import net.konohana.sakuya.inquiry.enjurw.models.tosta.dto.EnjuRW04ToStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.tosta.dto.EnjuRW05ToStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.tosta.dto.EnjuRW06ToStaInfoData
 import org.jetbrains.exposed.sql.ResultRow
 import org.jetbrains.exposed.sql.selectAll
 
@@ -36,6 +40,18 @@ class DaoFacadeToStaInfoImpl : DaoFacadeToStaInfo {
         toStaName = row[EnjuRW04ToStaInfo.toStaName],
     )
 
+    private fun resultRowToEnjuRW05(row: ResultRow) = EnjuRW05ToStaInfoData(
+        id = row[EnjuRW05ToStaInfo.id],
+        toStaCode = row[EnjuRW05ToStaInfo.toStaCode],
+        toStaName = row[EnjuRW05ToStaInfo.toStaName],
+    )
+
+    private fun resultRowToEnjuRW06(row: ResultRow) = EnjuRW06ToStaInfoData(
+        id = row[EnjuRW06ToStaInfo.id],
+        toStaCode = row[EnjuRW06ToStaInfo.toStaCode],
+        toStaName = row[EnjuRW06ToStaInfo.toStaName],
+    )
+
     override suspend fun allEnjuRW01ToStaInfo(): List<EnjuRW01ToStaInfoData> = DatabaseFactory.dbQuery {
         EnjuRW01ToStaInfo.selectAll().map(::resultRowToEnjuRW01)
     }
@@ -50,6 +66,14 @@ class DaoFacadeToStaInfoImpl : DaoFacadeToStaInfo {
 
     override suspend fun allEnjuRW04ToStaInfo(): List<EnjuRW04ToStaInfoData> = DatabaseFactory.dbQuery {
         EnjuRW04ToStaInfo.selectAll().map(::resultRowToEnjuRW04)
+    }
+
+    override suspend fun allEnjuRW05ToStaInfo(): List<EnjuRW05ToStaInfoData> = DatabaseFactory.dbQuery {
+        EnjuRW05ToStaInfo.selectAll().map(::resultRowToEnjuRW05)
+    }
+
+    override suspend fun allEnjuRW06ToStaInfo(): List<EnjuRW06ToStaInfoData> = DatabaseFactory.dbQuery {
+        EnjuRW06ToStaInfo.selectAll().map(::resultRowToEnjuRW06)
     }
 }
 
