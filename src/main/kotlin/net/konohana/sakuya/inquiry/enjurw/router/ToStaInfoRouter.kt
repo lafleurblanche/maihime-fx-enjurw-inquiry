@@ -50,5 +50,25 @@ fun Route.toStaInfoRouter() {
                 )
             }
         }
+        route("enjurw05") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw05.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW05ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw06") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw06.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW06ToStaInfo())
+                    )
+                )
+            }
+        }
     }
 }
