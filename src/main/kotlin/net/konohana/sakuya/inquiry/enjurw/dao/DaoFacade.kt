@@ -1,24 +1,24 @@
 package net.konohana.sakuya.inquiry.enjurw.dao
 
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW01FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW02FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW03FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW04FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW05FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW06FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW07FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW08FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW09FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW10FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW11FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW12FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW13FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW14FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW15FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW16FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW17FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW18FromStaInfoData
-import net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW19FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW01FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW02FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW03FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW04FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW05FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW06FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW07FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW08FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW09FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW10FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW11FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW12FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW13FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW14FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW15FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW16FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW17FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW18FromStaInfoData
+import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW19FromStaInfoData
 
 interface DaoFacade {
     suspend fun allEnjuRW01FromStaInfo(): List<EnjuRW01FromStaInfoData>
