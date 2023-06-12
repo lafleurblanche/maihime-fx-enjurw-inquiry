@@ -1,4 +1,4 @@
-<#-- @ftlvariable name="fromStaInfo" type="kotlin.collections.List<net.konohana.sakuya.inquiry.enjurw.models.dto.EnjuRW18FromStaInfoData>" -->
+<#-- @ftlvariable name="fromStaInfo" type="kotlin.collections.List<net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW18FromStaInfoData>" -->
 <#import "_header_enjurw18.ftl" as layout />
 <@layout.header>
     <table border=0>
