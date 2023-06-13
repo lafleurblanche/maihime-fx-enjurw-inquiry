@@ -70,5 +70,145 @@ fun Route.toStaInfoRouter() {
                 )
             }
         }
+        route("enjurw06") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw06.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW06ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw07") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw07.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW07ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw08") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw08.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW08ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw09") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw09.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW09ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw10") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw10.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW10ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw11") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw11.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW11ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw12") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw12.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW12ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw13") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw13.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW13ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw14") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw14.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW14ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw15") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw15.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW15ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw16") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw16.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW16ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw17") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw17.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW17ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw18") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw18.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW12ToStaInfo())
+                    )
+                )
+            }
+        }
+        route("enjurw19") {
+            get {
+                call.respond(
+                    FreeMarkerContent(
+                        "tosta/index_enjurw19.ftl",
+                        mapOf("toStaInfo" to daoToStaInfo.allEnjuRW19ToStaInfo())
+                    )
+                )
+            }
+        }
     }
 }
