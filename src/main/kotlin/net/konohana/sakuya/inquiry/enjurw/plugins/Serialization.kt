@@ -6,6 +6,8 @@ import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
 import io.ktor.server.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.server.routing.routing
+import net.konohana.sakuya.inquiry.enjurw.api.router.enjuRWFromStaInfoApiRouter
 
 fun Application.configureSerialization() {
     install(ContentNegotiation) {
@@ -13,5 +15,8 @@ fun Application.configureSerialization() {
         jackson {
             enable(SerializationFeature.INDENT_OUTPUT)
         }
+    }
+    routing {
+        enjuRWFromStaInfoApiRouter()
     }
 }
