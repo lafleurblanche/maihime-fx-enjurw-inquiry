@@ -1,4 +1,4 @@
-package net.konohana.sakuya.inquiry.enjurw.api.services
+package net.konohana.sakuya.inquiry.enjurw.api.services.fromsta
 
 import net.konohana.sakuya.inquiry.enjurw.api.repositories.fromsta.EnjuRW02FromStaInfoRepository
 

@@ -1,4 +1,4 @@
-package net.konohana.sakuya.inquiry.enjurw.api.controller
+package net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta
 
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.call

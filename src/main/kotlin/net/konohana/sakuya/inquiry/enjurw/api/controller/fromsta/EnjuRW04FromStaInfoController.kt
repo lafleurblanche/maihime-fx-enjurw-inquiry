@@ -1,4 +1,4 @@
-package net.konohana.sakuya.inquiry.enjurw.api.controller
+package net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta
 
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.call
@@ -6,7 +6,7 @@ import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.get
 import io.ktor.server.routing.route
-import net.konohana.sakuya.inquiry.enjurw.api.services.EnjuRW04FromStaInfoService
+import net.konohana.sakuya.inquiry.enjurw.api.services.fromsta.EnjuRW04FromStaInfoService
 import net.konohana.sakuya.inquiry.enjurw.models.fromsta.dto.EnjuRW04FromStaInfoData
 
 fun Route.enjuRW04FromStaInfoController() {
