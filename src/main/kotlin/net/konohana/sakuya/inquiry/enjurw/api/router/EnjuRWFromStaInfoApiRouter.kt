@@ -11,6 +11,9 @@ import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.enjuRW07FromSta
 import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.enjuRW08FromStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.enjuRW09FromStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.enjuRW10FromStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.enjuRW11FromStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.enjuRW12FromStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.enjuRW13FromStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.fromsta.notFoundFromStaInfoController
 
 fun Route.enjuRWFromStaInfoApiRouter() {
@@ -24,5 +27,8 @@ fun Route.enjuRWFromStaInfoApiRouter() {
     enjuRW08FromStaInfoController()
     enjuRW09FromStaInfoController()
     enjuRW10FromStaInfoController()
+    enjuRW11FromStaInfoController()
+    enjuRW12FromStaInfoController()
+    enjuRW13FromStaInfoController()
     notFoundFromStaInfoController()
 }
