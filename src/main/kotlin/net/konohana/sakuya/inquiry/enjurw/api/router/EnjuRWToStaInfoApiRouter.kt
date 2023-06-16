@@ -5,6 +5,7 @@ import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW01ToStaInfo
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW02ToStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW03ToStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW04ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW05ToStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.notFoundToStaInfoController
 
 fun Route.enjuRWToStaInfoApiRouter() {
@@ -12,5 +13,6 @@ fun Route.enjuRWToStaInfoApiRouter() {
     enjuRW02ToStaInfoController()
     enjuRW03ToStaInfoController()
     enjuRW04ToStaInfoController()
+    enjuRW05ToStaInfoController()
     notFoundToStaInfoController()
 }
