@@ -13,6 +13,13 @@ import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW09ToStaInfo
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW10ToStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW11ToStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW12ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW13ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW14ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW15ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW16ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW17ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW18ToStaInfoController
+import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.enjuRW19ToStaInfoController
 import net.konohana.sakuya.inquiry.enjurw.api.controller.tosta.notFoundToStaInfoController
 
 fun Route.enjuRWToStaInfoApiRouter() {
@@ -29,5 +36,12 @@ fun Route.enjuRWToStaInfoApiRouter() {
     enjuRW10ToStaInfoController()
     enjuRW11ToStaInfoController()
     enjuRW12ToStaInfoController()
+    enjuRW13ToStaInfoController()
+    enjuRW14ToStaInfoController()
+    enjuRW15ToStaInfoController()
+    enjuRW16ToStaInfoController()
+    enjuRW17ToStaInfoController()
+    enjuRW18ToStaInfoController()
+    enjuRW19ToStaInfoController()
     notFoundToStaInfoController()
 }
